@@ -1,0 +1,38 @@
+/* Override des valeurs par défaut */
+*{
+    margin:0px; 
+    padding:0px; 
+}
+
+.pad{
+  background-color: #fff;
+  width: 8%; 
+  border-radius: 50px;
+  padding: 40px 0px;
+  border: 5px solid royalblue;
+  margin: 20px;
+  justify-content: center;
+}
+
+@keyframes highlight {
+  0% { background-color: #fff; }
+  100% {background-color: royalblue; }
+}
+
+.pad:active {
+  background-color: royalblue;
+  box-shadow: 0 7px #666;
+  transform: translateY(4px);
+}
+
+.pad:hover{
+  background-color: royalblue;
+  animation-name: highlight;
+  animation-duration: .1s;
+}
+
+.line{
+  display: flex;
+  padding: 5px 0px;
+  justify-content: center;
+}
